@@ -1,0 +1,107 @@
+﻿<Window x:Class="calculatorpro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calculatorpro"
+        mc:Ignorable="d"
+        Title="Calculator naka" Height="350" Width="443">
+    <Grid Margin="0,0,2,0" Background="Black">
+        <TextBox x:Name="numbox" HorizontalAlignment="Left" Height="77" Margin="0,24,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="433" FontSize="36" Background="Black" Foreground="White" BorderBrush="Black" SelectionBrush="#FFBC0BFF" CaretBrush="#FF39D12A"/>
+        <Button x:Name="sinbtn" Content="Sin" HorizontalAlignment="Left" Margin="9,106,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="sinbtn_Click" Background="#FF5B5B5B" Foreground="White"/>
+        <Button x:Name="cosbtn" Content="Cos" HorizontalAlignment="Left" Margin="9,155,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="cosbtn_Click" Background="#FF5B5B5B" Foreground="White"/>
+        <Button x:Name="tanbtn" Content="Tan" HorizontalAlignment="Left" Margin="10,204,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="tanbtn_Click" Background="#FF5B5B5B" Foreground="White"/>
+        <Button x:Name="rootbtn" Content=" √" HorizontalAlignment="Left" Margin="68,155,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="rootbtn_Click" Background="#FF5B5B5B" Foreground="White" FontSize="24"/>
+        <Button x:Name="powbtn" Content="^" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="powbtn_Click" Background="#FF5B5B5B" Foreground="White" FontSize="24"/>
+        <Button x:Name="fbtn" Content="!" HorizontalAlignment="Left" Margin="68,204,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="fbtn_Click" Background="#FF5B5B5B" Foreground="White" FontSize="24"/>
+        <Button x:Name="logbtn" Content="log" HorizontalAlignment="Left" Margin="68,106,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="logbtn_Click" Background="#FF5B5B5B" Foreground="White"/>
+        <Button x:Name="modbtn" Content="mod" HorizontalAlignment="Left" Margin="68,253,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="modbtn_Click" Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\m.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_7btn" Content="7" HorizontalAlignment="Left" Margin="127,106,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_7btn_Click" Foreground="{x:Null}" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\7.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_4btn" Content="4" HorizontalAlignment="Left" Margin="127,155,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_4btn_Click" Foreground="{x:Null}" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\4.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_1btn" Content="1" HorizontalAlignment="Left" Margin="127,204,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_1btn_Click" Foreground="{x:Null}" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\1.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="dotbtn" Content="." HorizontalAlignment="Left" Margin="127,253,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="dotbtn_Click" Background="#FFF92B2B" Foreground="White" FontSize="16"/>
+        <Button x:Name="_0btn" Content="0" HorizontalAlignment="Left" Margin="186,253,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_0btn_Click" Foreground="{x:Null}" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\0.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_2btn" Content="2" HorizontalAlignment="Left" Margin="186,204,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_2btn_Click" Foreground="{x:Null}" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\2.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_5btn" Content="5" HorizontalAlignment="Left" Margin="186,155,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_5btn_Click" Foreground="{x:Null}" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\5.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_8btn" Content="8" HorizontalAlignment="Left" Margin="186,106,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_8btn_Click" Background="#FFF92B2B" Foreground="White" FontSize="16"/>
+        <Button x:Name="_9btn" Content="9" HorizontalAlignment="Left" Margin="245,106,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_9btn_Click" Foreground="{x:Null}" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\9.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="_6btn" Content="6" HorizontalAlignment="Left" Margin="245,155,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_6btn_Click" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\6.jpg"/>
+            </Button.Background>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="_3btn" Content="3" HorizontalAlignment="Left" Margin="245,204,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="_3btn_Click" Foreground="{x:Null}" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\3.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="eqbtn" Content="=" HorizontalAlignment="Left" Margin="245,253,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="eqbtn_Click" FontSize="24" Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\=.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="provbtn" Content="/" HorizontalAlignment="Left" Margin="304,253,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="provbtn_Click" Foreground="{x:Null}" FontSize="24">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\หาร.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="timebtn" Content="*" HorizontalAlignment="Left" Margin="304,204,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="timebtn_Click" Foreground="{x:Null}" FontSize="24">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\x.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="debtn" Content="-" HorizontalAlignment="Left" Margin="304,155,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="debtn_Click" Foreground="{x:Null}" FontSize="24">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\-.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button_Copy30" Content="Button" HorizontalAlignment="Left" Margin="304,106,0,0" VerticalAlignment="Top" Width="54" Height="44"/>
+        <Button x:Name="plusbtn" Content="+" HorizontalAlignment="Left" Margin="304,106,0,0" VerticalAlignment="Top" Width="54" Height="44" Cursor="" Click="plusbtn_Click" Foreground="{x:Null}" FontSize="24">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\+.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="delallbtn" Content="C" HorizontalAlignment="Left" Margin="363,155,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="delallbtn_Click" FontSize="14" Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\Work\avd com pro 2560\Proje\calculatorpro\c.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="delbtn" Content="&lt;--" HorizontalAlignment="Left" Margin="363,106,0,0" VerticalAlignment="Top" Width="54" Height="44" Click="delbtn_Click" FontSize="14"/>
+
+    </Grid>
+</Window>
